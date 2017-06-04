@@ -109,7 +109,7 @@ This is needed as we do a regression kind of prediction of the output rather tha
 [//]: # (Image References)
 
 [image1]: ./cropped_img.png "Cropped image"
-[image2]: ./resized_img..png "Resized image"
+[image2]: ./resized_img.png "Resized image"
 [image3]: ./flipped_img.png "Flipped image"
 [image4]: ./examples/youtube-screenshot.png "YouTube Video Link"
 
@@ -127,19 +127,19 @@ two images.
 a 32x320 image, by cropping the top 80 and bottom 48 pixels. This contain info
 of sky/ground that are not relevant to our problem.
 
-![alt text][image1]
+![Cropped Image][image1]
 
 ![Data Visualization][image1]
 2. Now, since our network requires a 32x32 image, I use opencv's resize function
 to resize images.
 
-![Input Crop and Resize - Example 1][image2]
+![Resized image][image2]
 
 3. Now, to generate additional samples, I flip the above image and for it flip the 
 steering too. You can see the flipped image as below. This provides us more data 
 representing a different scenario. 
 
-![Input Crop and Resize - Example 2][image3]
+![Flipped image][image3]
 
 Then I train the model for 4-5 epochs. Since, I use an Adam optimizer, I don't need to tune the learning rates. The performance is evaluated on the simulator.
 Now for the laps that the car goes, out, we collect recovery data and then retrain the
