@@ -118,7 +118,7 @@ This is needed as we do a regression kind of prediction of the output rather tha
 
 
 
-####3. Creation of the Training Set & Training Process
+#### 3. Creation of the Training Set & Training Process
 
 For the final model, I do some preprocessing and from each center image generate
 two images.
