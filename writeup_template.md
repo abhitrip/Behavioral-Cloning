@@ -116,7 +116,7 @@ This is needed as we do a regression kind of prediction of the output rather tha
 
 
 
-![alt text][image1]
+
 
 ####3. Creation of the Training Set & Training Process
 
@@ -126,6 +126,8 @@ two images.
 1. First I crop the image as shown below. From a 160x320 image, I keep only 
 a 32x320 image, by cropping the top 80 and bottom 48 pixels. This contain info
 of sky/ground that are not relevant to our problem.
+
+![alt text][image1]
 
 ![Data Visualization][image1]
 2. Now, since our network requires a 32x32 image, I use opencv's resize function
