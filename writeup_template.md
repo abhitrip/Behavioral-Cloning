@@ -115,9 +115,6 @@ This is needed as we do a regression kind of prediction of the output rather tha
 
 
 
-
-
-
 #### 3. Creation of the Training Set & Training Process
 
 For the final model, I do some preprocessing and from each center image generate
@@ -129,7 +126,6 @@ of sky/ground that are not relevant to our problem.
 
 ![Cropped Image][image1]
 
-![Data Visualization][image1]
 2. Now, since our network requires a 32x32 image, I use opencv's resize function
 to resize images.
 
